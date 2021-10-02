@@ -1,0 +1,126 @@
+						Question no 2
+
+void main(){
+  
+ number(2);
+
+}
+
+void number(var a){
+  for(var i=1;i<=10;i++)
+    print("${a} * ${i} = ${a*i}");
+}
+
+						Question no 3
+
+void main(){
+  
+  divide(2);
+}
+
+void divide(var number){
+  List<dynamic> lst=[2,4,6,8,9];
+  for(var i in lst)
+  {
+    print(i/number);
+  }
+  
+}
+
+						Question no 4
+
+void main(){
+  
+  marksheet();
+}
+
+void marksheet(){
+  List<dynamic> lst=["Daniyal","Ali","Ahmed","Bilal","Haris"];
+  List<dynamic> lst1=[490,470,450,430,350];
+
+  var map1=Map.fromIterables(lst,lst1);
+  for(var i in map1.entries)
+  {
+    print("${i.key}: You Obtained Marks is ${i.value} out of 500");
+  }
+}
+
+
+						Question no 5
+
+void main(){
+  
+  A obj = A();
+  obj.say();
+}
+
+class A{
+  
+  void say(){
+    print("How are you?");
+  }
+}
+
+						Question no 6
+
+void main(){
+  Abc obj=Abc();
+  print(obj.name);
+  
+}
+
+class myname{
+
+}
+
+class Abc extends myname{
+  String name ="My name is Daniyal Iftikhar";
+  
+}
+
+						Question no 7
+
+void main() {
+  Student std = Student(name: "Daniyal",age: 22, education: "B.Sc");
+  std.sayMyName();
+}
+
+class Student {
+  //properties definition
+  int age;
+  String name;
+  var education; 
+
+  //constructor
+  Student({required this.name, required this.age,required this.education});
+
+  //method
+  void sayMyName() {
+    print("My name is $name");
+    print("My age is $age"); 
+    print("My education is $education");
+  }
+}
+
+						Question no 8
+
+void main(){
+  power obj = power();
+  obj.bike();
+  obj.motorcycle();
+}
+
+class vehicle{
+  
+  void bike(){
+    print("This is my Bike");
+  }
+}
+
+class power extends vehicle{
+ void motorcycle(){
+   print("This is Super Power");
+ } 
+}
+
+		
